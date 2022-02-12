@@ -1,0 +1,14 @@
+@import './buttons.css';
+body{
+    background-color: #26B4BC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+    max-inline-size: 900px;
+    margin: auto;
+}
+
+.player video{
+    inline-size: 100%;
+    max-inline-size: 900px;
+}
