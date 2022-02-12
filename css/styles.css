@@ -7,8 +7,18 @@ body{
     max-inline-size: 900px;
     margin: auto;
 }
-
+.player{
+    margin-block-start: 100px;
+    position: relative;
+}
 .player video{
     inline-size: 100%;
-    max-inline-size: 900px;
+}
+.player-title {
+    color:white;
+    position: absolute;
+    inset-block-start: 50px;
+}
+.player-actions{
+    position: absolute;
 }
