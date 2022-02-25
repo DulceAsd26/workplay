@@ -43,6 +43,12 @@
 
         function handleTimeUpdate(){
             $progress.value = $video.currentTime
-            console.log('Tiempo actual', $video.currentTime)
+           // console.log('Tiempo actual', $video.currentTime)
+        }
+
+        $progress.addEventListener('input', handleInput)
+        function handleInput(){
+            $video.currentTime = $progress.value
+            console.log($progress.value)
         }
         
