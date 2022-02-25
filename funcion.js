@@ -32,4 +32,17 @@
             $video.currentTime = $video.currentTime + 10
             console.log('para adelantar 10 segundos', $video.currentTime)
         }
+        const $progress = document.querySelector('#progress')
+        $video.addEventListener('loadedmetadata', handleLoaded)
+        $video.addEventListener('timeupdate', handleTimeUpdate)
+
+        function handleLoaded(){
+            progress.max = $video.duration
+            console.log('ha cargado exitosamente',$video.duration)
+        }
+
+        function handleTimeUpdate(){
+            $progress.value = $video.currentTime
+            console.log('Tiempo actual', $video.currentTime)
+        }
         
